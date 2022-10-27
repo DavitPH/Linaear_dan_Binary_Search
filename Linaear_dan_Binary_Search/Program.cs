@@ -86,6 +86,35 @@ namespace Linaear_dan_Binary_Search
             }
 
         }
+        public void LinearSearch()
+        {
+            char ch;
+            //search for the nummber to be search
+            int ctr;
+            do
+            {
+                //accept the number to be search
+                Console.Write("\nEnter the Element you want to search : ");
+                int item = Convert.ToInt32((Console.ReadLine());
+
+                ctr = 0;
+                for (i = 0; i < n; i++)
+                {
+                    ctr++;
+                    if (arr[i] == item)
+                    {
+                        Console.WriteLine("\n" + item.ToString() + " found at position" + (i + 1).ToString());
+                        break;
+                    }
+                }
+                if (i == n)
+                    Console.WriteLine("\n" + item.ToString() + "not found in the array");
+                Console.WriteLine("\nNumber of Comparison : " + ctr);
+                Console.WriteLine("\nContinue Search (y/n) : ");
+                ch = char.Parse(Console.ReadLine());
+            } while ((ch == 'y'));
+
+        }
 
 
 
