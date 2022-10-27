@@ -34,7 +34,7 @@ namespace Linaear_dan_Binary_Search
 
             for (i = 0; i < n; i++)
             {
-                Console.WriteLine("<" + (i + 1) + ">");
+                Console.Write("<" + (i + 1) + ">");
                 string s1 = Console.ReadLine();
                 arr[i] = Int32.Parse(s1);
             }
@@ -135,13 +135,21 @@ namespace Linaear_dan_Binary_Search
                 switch (pilihanmu)
                 {
                     case 1:
+                        Console.WriteLine("Linear Search");
+                        Console.WriteLine("");
+                        mylist.input();
+                        mylist.LinearSearch();
                         Console.WriteLine("");
                         break;
                     case 2:
+                        Console.WriteLine("Binary Search");
+                        Console.WriteLine("");
+                        mylist.input();
+                        mylist.BinarySearch();
                         Console.WriteLine("");
                         break;
                     case 3:
-                        Console.WriteLine("");
+                        Console.WriteLine("Exit");
                         break;
                 }
                 Console.WriteLine("\nPilih Menu Lagi? (y/n): ");
