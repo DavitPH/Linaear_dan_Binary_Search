@@ -62,7 +62,7 @@ namespace Linaear_dan_Binary_Search
                 while ((item != arr[mid]) && (ctr <= upperbound))
                 {
                     if (item == arr[mid])
-                    {
+                    
                             lowerbound = mid + 1;
                     else
                             upperbound = mid - 1;
@@ -70,19 +70,19 @@ namespace Linaear_dan_Binary_Search
 
                         mid = (lowerbound + upperbound) / 2;
                         ctr++;
-                    }
+                    
 
                     if (item == arr[mid])
-                    {
+                    
                         Console.WriteLine("\n" + item.ToString() + "found at position" + (mid + 1).ToString());
                     else
                             Console.WriteLine("\n" + item.ToString() + "not found in the array\n");
                         Console.WriteLine("\nNumber of Comparasion : " + ctr);
 
-                        Console.WriteLine("\nContinue search (y/n) : ");
-                        ch = char.Parse(Console.ReadLine());
-                    }
+                    
                 }
+                Console.WriteLine("\nContinue search (y/n) : ");
+                ch = char.Parse(Console.ReadLine());
             } while ((ch == 'y'));
 
         }
