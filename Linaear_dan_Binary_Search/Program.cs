@@ -45,6 +45,7 @@ namespace Linaear_dan_Binary_Search
 
             do
             {
+
                 //Accept the number to be searched
                 Console.Write("\n Enter the Element you want to search : ");
                 int item = Convert.ToInt32(Console.ReadLine());
@@ -62,7 +63,7 @@ namespace Linaear_dan_Binary_Search
                 {
                     if (item == arr[mid])
                     {
-                        lowerbound = mid + 1;
+                            lowerbound = mid + 1;
                     else
                             upperbound = mid - 1;
 
@@ -80,10 +81,9 @@ namespace Linaear_dan_Binary_Search
 
                         Console.WriteLine("\nContinue search (y/n) : ");
                         ch = char.Parse(Console.ReadLine());
-                    } while ((ch == 'y')) ;
+                    }
                 }
-
-            }
+            } while ((ch == 'y'));
 
         }
         public void LinearSearch()
@@ -95,7 +95,7 @@ namespace Linaear_dan_Binary_Search
             {
                 //accept the number to be search
                 Console.Write("\nEnter the Element you want to search : ");
-                int item = Convert.ToInt32((Console.ReadLine());
+                int item = Convert.ToInt32(Console.ReadLine());
 
                 ctr = 0;
                 for (i = 0; i < n; i++)
@@ -120,7 +120,34 @@ namespace Linaear_dan_Binary_Search
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int pilihanmu;
+            char ch;
+            Program mylist = new Program();
+            do
+            {
+                Console.WriteLine("Menu Pilihan");
+                Console.WriteLine("======================");
+                Console.WriteLine("1. Linear Search");
+                Console.WriteLine("2. Binary Search");
+                Console.WriteLine("3, Exit");
+                Console.WriteLine("Enter your choice (1, 2, 3) : ");
+                pilihanmu = Convert.ToInt32(Console.ReadLine());
+                switch (pilihanmu)
+                {
+                    case 1:
+                        Console.WriteLine("");
+                        break;
+                    case 2:
+                        Console.WriteLine("");
+                        break;
+                    case 3:
+                        Console.WriteLine("");
+                        break;
+                }
+                Console.WriteLine("\nPilih Menu Lagi? (y/n): ");
+                ch = char.Parse(Console.ReadLine());
+                Console.Clear();
+            } while (ch == 'y');
         }
     }
 
