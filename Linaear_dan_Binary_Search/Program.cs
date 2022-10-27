@@ -25,6 +25,21 @@ namespace Linaear_dan_Binary_Search
                 else
                     Console.Write("\n Array should have minimun 1 and maximum 20 element. \n");
             }
+
+            //Accept array element
+            Console.WriteLine("");
+            Console.WriteLine("--------------------");
+            Console.WriteLine("Enter Array Element ");
+            Console.WriteLine("--------------------");
+
+            for(i = 0; i < n; i++)
+            {
+                Console.WriteLine("<"+ (i+1) + ">");
+                string s1 = Console.ReadLine();
+                arr[i] = Int32.Parse(s1);
+            }
+
+
         }
 
 
